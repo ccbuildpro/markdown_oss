@@ -17,7 +17,7 @@ python3 image_convert.py --format avif --resize 1200 --oss_folder <oss_folder_na
 --path，原始文件路径，如果传的是文件夹，将会遍历文件夹下的所有图片并全部压缩。注意：不会遍历子目录
 --oss_folder，指定上传的阿里云oss路径，不传这个参数，将不会上传oss，注意：oss的bucket已经在脚本里指定了，你可以自己修改脚本
 
-另外，imagemagic本身支持大量的压缩优化定义，可以参考:<https://b.alnk.top/2016-03-23_imagemagick_compress_image/>
+另外，imagemagic本身支持大量的压缩优化定义，可以参考：<https://b.alnk.top/2016-03-23_imagemagick_compress_image/>
 
 ## 准备工作
 ### pip
@@ -27,7 +27,7 @@ pip3 install Pillow
 pip3 install filetype
 ```
 ### 图片压缩ImageMagic
-使用到了ImageMagic<https://imagemagick.org/script/download.php>
+使用到了ImageMagic：<https://imagemagick.org/script/download.php>
 ```shell
 brew install ghostscript
 brew install imagemagick
