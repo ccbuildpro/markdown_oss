@@ -11,11 +11,12 @@ python3 image_convert.py --path <origin_file_name>
 python3 image_convert.py --format avif --resize 1200 --oss_folder <oss_folder_name> --path <origin_file_name>
 ```
 ### 参数说明
---format，目标格式，默认webp，支持webp、avif、heic、heif，其实支持各种格式，我懒得写。
+
+1. --format，目标格式，默认webp，支持webp、avif、heic、heif，其实支持各种格式，我懒得写。
 如果图片本身已经是webp、avif、heic、heif，将不做转换
---resize，最小尺寸，取图片长宽，并自动压缩到resize的值，如不传入，将不做压缩
---path，原始文件路径，如果传的是文件夹，将会遍历文件夹下的所有图片并全部压缩。注意：不会遍历子目录
---oss_folder，指定上传的阿里云oss路径，不传这个参数，将不会上传oss，注意：oss的bucket已经在脚本里指定了，你可以自己修改脚本
+2. --resize，最小尺寸，取图片长宽，并自动压缩到resize的值，如不传入，将不做压缩
+3. --path，原始文件路径，如果传的是文件夹，将会遍历文件夹下的所有图片并全部压缩。注意：不会遍历子目录
+4. --oss_folder，指定上传的阿里云oss路径，不传这个参数，将不会上传oss，注意：oss的bucket已经在脚本里指定了，你可以自己修改脚本
 
 另外，imagemagic本身支持大量的压缩优化定义，可以参考：<https://b.alnk.top/2016-03-23_imagemagick_compress_image/>
 
